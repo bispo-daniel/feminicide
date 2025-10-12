@@ -1,11 +1,46 @@
 <div
-  class="w-full h-screen bg-gradient-to-br from-black via-slate-900 to-gray-950 flex flex-col items-center justify-center text-white px-6 py-12 relative overflow-hidden select-none">
-  <h2 class="text-4xl sm:text-5xl font-bold text-center mb-6 z-10 leading-tight">
-    Pronto para testar<br />seus conhecimentos sobre <span class="text-cyan-400 hover:underline">Blockchain</span>?
-  </h2>
+  class="w-full h-screen bg-white flex flex-col gap-3 md:gap-5 px-4 py-3 md:px-8 md:py-4 text-black select-none items-center justify-between">
+  <div class="max-w-3xl">
+    <h2 class="font-[Modak] text-2xl sm:text-3xl md:text-4xl text-[#4f4f4f] leading-tight">
+      Teste de <span class="text-[#8C0818]">vulnerabilidade/risco</span>
+    </h2>
+    <p class="text-[13px] sm:text-sm text-gray-700 leading-snug font-[Roboto] mt-1">
+      Rastreador breve para refletir sobre <app-itext content="sinais de risco e segurança" />.
+      Não substitui atendimento profissional.
+    </p>
+  </div>
 
-  <a routerLink="/quiz"
-    class="mt-6 hover:cursor-pointer inline-block px-8 py-3 text-lg font-semibold bg-cyan-400 text-black rounded-full shadow-lg hover:bg-cyan-300 transition-all duration-300 z-10">
-    Começar Quiz
-  </a>
+  <section
+    class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-6 shadow w-[450px] flex flex-col items-center">
+    <h3 class="font-semibold text-base md:text-lg mb-2">Por que este teste?</h3>
+
+    <p class="text-[13px] md:text-sm text-gray-800 leading-relaxed text-center">
+      <span class="font-semibold">Sinais críticos</span> — ameaças, controle, escalada, armas e perseguição
+      (base em instrumentos como o <em>Danger Assessment</em>);
+      <span class="font-semibold">orientações seguras</span> — linguagem acolhedora e foco em segurança
+      (protocolo LIVES/OMS);
+      <span class="font-semibold">encaminhamento oficial</span> — informações sobre 180/DEAM e canais públicos quando
+      necessário.
+    </p>
+
+    <div class="mt-4 flex flex-col items-center">
+      <button routerLink="/quiz"
+        class="inline-flex items-center justify-center rounded-2xl px-6 py-3 bg-[#8C0818] text-white font-semibold shadow hover:opacity-95 transition text-sm md:text-base">
+        ✨ Iniciar teste agora
+      </button>
+      <p class="text-[12px] text-gray-600 mt-1">
+        7 perguntas • ~2 minutos • sem salvar respostas
+      </p>
+    </div>
+  </section>
+
+
+  <div class="rounded-2xl border border-amber-300 bg-amber-50 p-3 md:p-4">
+    <p class="text-[13px] md:text-sm text-amber-900 leading-snug">
+      <span class="font-semibold">Emergência:</span> risco iminente → ligue 190.
+      <span class="ml-2 font-semibold">Privacidade:</span> se optar por enviar dados, pediremos <app-itext
+        content="consentimento" /> e seguiremos a <span class="font-semibold">LGPD</span>.
+      Para orientação/denúncia 24h, existe o serviço público <span class="font-semibold">Ligue 180</span>.
+    </p>
+  </div>
 </div>

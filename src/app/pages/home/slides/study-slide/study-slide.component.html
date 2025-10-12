@@ -1,45 +1,97 @@
-<div
-  class="w-full h-screen bg-gradient-to-tr from-white via-sky-50 to-white flex flex-col items-center justify-center px-6 py-12 text-black relative overflow-hidden select-none">
-  <h2 class="text-4xl font-bold text-center z-10">Quer aprender mais?</h2>
-  <p class="text-center text-gray-600 mt-2 z-10 mb-8">Explore conteúdos gratuitos sobre blockchain.</p>
+<div class="w-full h-screen bg-white flex flex-col gap-3 md:gap-5 px-4 py-3 md:px-8 md:py-8 text-black select-none">
+  <div class="max-w-3xl">
+    <h2 class="font-[Modak] text-2xl sm:text-3xl md:text-4xl text-[#4f4f4f] leading-tight">
+      Para estudar e acompanhar <span class="text-[#8C0818]">feminicídio</span>
+    </h2>
+    <p class="text-[13px] sm:text-sm text-gray-700 leading-snug font-[Roboto] mt-1">
+      Portais e materiais oficiais sobre <app-itext content="leis" />, <app-itext content="dados" /> e <app-itext
+        content="políticas públicas" />.
+    </p>
+  </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl w-full z-10">
-    <a href="https://academy.binance.com/pt" target="_blank"
-      class="group p-6 rounded-xl border border-gray-200 bg-white hover:shadow-xl transition flex items-center gap-4 hover:scale-105">
-      <img src="assets/images/binance.jpg" class="w-10 h-10 rounded select-none" draggable="false"
-        alt="Binance Academy" />
-      <div>
-        <h3 class="font-semibold text-lg group-hover:text-[#F1B90C] transition">Binance Academy</h3>
-        <p class="text-sm text-gray-500">Cursos e artigos gratuitos sobre blockchain, cripto e Web3.</p>
-      </div>
-    </a>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
 
-    <a href="https://www.coursera.org/learn/blockchain-basics" target="_blank"
-      class="group p-6 rounded-xl border border-gray-200 bg-white hover:shadow-xl transition flex items-center gap-4 hover:scale-105">
-      <img src="assets/images/coursera.png" class="w-10 h-10 rounded select-none" draggable="false" alt="Coursera" />
-      <div>
-        <h3 class="font-semibold text-lg group-hover:text-[#2254CA] transition">Coursera</h3>
-        <p class="text-sm text-gray-500">Curso "Blockchain Basics" da Universidade de Buffalo (gratuito).</p>
-      </div>
-    </a>
+    <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow">
+      <div class="text-xs uppercase tracking-wide text-gray-500">Leis</div>
+      <h3 class="font-semibold text-base md:text-lg mb-2">Marco legal</h3>
+      <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
+        <li class="leading-snug">
+          <app-itext content="Lei 14.994/2024" /> — cria o <app-itext content="art. 121-A" />
+          (feminicídio como crime autônomo) e prevê monitoração eletrônica na LEP.
+        </li>
+        <li class="leading-snug">
+          <app-itext content="Lei 13.104/2015" /> — incluiu o feminicídio como qualificadora do homicídio e
+          no rol dos hediondos (histórico).
+        </li>
+        <li class="leading-snug">
+          <app-itext content="Lei Maria da Penha (11.340/2006)" /> — base para medidas protetivas e
+          tipologias de violência.
+        </li>
+      </ul>
+    </section>
 
-    <a href="https://blockgeeks.com/" target="_blank"
-      class="group p-6 rounded-xl border border-gray-200 bg-white hover:shadow-xl transition flex items-center gap-4 hover:scale-105">
-      <img src="assets/images/blockgeeks.jpg" class="w-10 h-10 rounded select-none" draggable="false"
-        alt="Blockgeeks" />
-      <div>
-        <h3 class="font-semibold text-lg group-hover:text-[#24B2FA] transition">Blockgeeks</h3>
-        <p class="text-sm text-gray-500">Tutoriais técnicos e artigos de aprofundamento em blockchain.</p>
-      </div>
-    </a>
+    <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow">
+      <div class="text-xs uppercase tracking-wide text-gray-500">Dados oficiais</div>
+      <h3 class="font-semibold text-base md:text-lg mb-2">Séries e indicadores</h3>
+      <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
+        <li class="leading-snug">
+          <app-itext content="Anuário Brasileiro de Segurança Pública (FBSP)" /> — série histórica e recortes
+          por UF.
+        </li>
+        <li class="leading-snug">
+          <app-itext content="Sinesp VDE / Dados Nacionais" /> — 28 indicadores (inclui feminicídio) com
+          validação rápida.
+        </li>
+        <li class="leading-snug">
+          <app-itext content="Atlas da Violência (Ipea/FBSP)" /> — análises e PDFs por tema (violência contra
+          a mulher, população negra).
+        </li>
+      </ul>
+    </section>
 
-    <a href="https://www.ibm.com/topics/what-is-blockchain" target="_blank"
-      class="group p-6 rounded-xl border border-gray-200 bg-white hover:shadow-xl transition flex items-center gap-4 hover:scale-105">
-      <img src="assets/images/ibm.png" class="w-10 h-10 rounded select-none" draggable="false" alt="IBM Blockchain" />
-      <div>
-        <h3 class="font-semibold text-lg group-hover:text-gray-800 transition">IBM Blockchain</h3>
-        <p class="text-sm text-gray-500">Explicações acessíveis com aplicações do mundo real.</p>
-      </div>
-    </a>
+    <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow">
+      <div class="text-xs uppercase tracking-wide text-gray-500">Pesquisas</div>
+      <h3 class="font-semibold text-base md:text-lg mb-2">Vitimização e evidências</h3>
+      <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
+        <li class="leading-snug">
+          <app-itext content="Visível e Invisível (FBSP/Datafolha)" /> — 5ª edição com prevalência por raça,
+          escolaridade e território.
+        </li>
+        <li class="leading-snug">
+          <app-itext content="Painéis e releases" /> de MPs estaduais e órgãos de justiça sobre medidas
+          protetivas e feminicídio.
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow">
+      <div class="text-xs uppercase tracking-wide text-gray-500">Políticas & Serviços</div>
+      <h3 class="font-semibold text-base md:text-lg mb-2">Rede de proteção</h3>
+      <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
+        <li class="leading-snug">
+          <app-itext content="Casa da Mulher Brasileira" /> — atendimento integrado; diretrizes e
+          implantação.
+        </li>
+        <li class="leading-snug">
+          <app-itext content="BNMPU (CNJ)" /> — Banco Nacional de Medidas Protetivas (norma e notas
+          técnicas).
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="flex flex-col justify-end grow gap-2">
+    <div class="rounded-2xl border border-amber-300 bg-amber-50 p-3 md:p-4">
+      <p class="text-[13px] md:text-sm text-amber-900 leading-snug">
+        Dica: ao comparar números, verifique <app-itext content="período de referência" /> e <app-itext
+          content="metodologia" /> de cada fonte (Anuário, Sinesp, Atlas).
+      </p>
+    </div>
+    <p class="text-[11px] text-gray-500">
+      Leis: Planalto – 14.994/2024; 13.104/2015; LMP 11.340/2006. Dados: FBSP/Anuário; MJSP – Sinesp VDE (28
+      indicadores);
+      Ipea/FBSP – Atlas. Pesquisas: FBSP/Datafolha – Visível e Invisível. Rede: Ministério das Mulheres – CMB; CNJ –
+      BNMPU.
+    </p>
   </div>
 </div>

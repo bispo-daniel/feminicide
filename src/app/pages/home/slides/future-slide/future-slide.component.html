@@ -1,16 +1,111 @@
-<div
-  class="w-full h-screen bg-black text-white flex flex-col items-center justify-center px-6 py-12 relative overflow-hidden select-none">
-  <h2 class="text-4xl font-bold text-center mb-6 z-10">Desafios & Futuro</h2>
+<div class="w-full h-screen bg-white flex flex-col gap-2 md:gap-4 px-4 py-3 md:px-8 md:py-4 text-black select-none">
 
-  <p class="text-center max-w-2xl text-lg text-gray-300 mb-10 z-10">
-    Blockchain enfrenta desafios, mas já aponta para um futuro mais <span
-      class="text-blue-400 font-semibold hover:underline">escalável</span>, <span
-      class="text-green-400 font-semibold hover:underline">sustentável</span> e <span
-      class="text-yellow-400 font-semibold hover:underline">conectado</span>.
-  </p>
-
-  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center z-10">
-    <app-image-card *ngFor="let item of challenges" [imageUrl]="item.imageUrl" [title]="item.title"
-      [gap]="0"></app-image-card>
+  <!-- Cabeçalho -->
+  <div class="w-full">
+    <h2 class="font-[Modak] text-2xl sm:text-3xl md:text-4xl text-[#4f4f4f] leading-tight w-full grow">
+      Futuro: <span class="text-[#8C0818]">prevenção</span>, políticas, educação e dados
+    </h2>
+    <p class="text-[13px] sm:text-sm text-gray-700 leading-snug font-[Roboto] mt-1">
+      Para reduzir feminicídios, o Brasil precisa combinar <app-itext content="respostas imediatas" /> e
+      <app-itext content="mudanças estruturais" /> — com evidências, serviços integrados e dados confiáveis.
+    </p>
   </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
+
+    <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow">
+      <div class="text-xs uppercase tracking-wide text-gray-500">Prevenção</div>
+      <h3 class="font-semibold text-base md:text-lg mb-2">Estratégias baseadas em evidências</h3>
+      <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
+        <li class="leading-snug">
+          Adotar o pacote <app-itext content="RESPECT" /> (ONU Mulheres/OMS):
+          habilidades relacionais, <app-itext content="empoderamento econômico" />, serviços garantidos,
+          redução da pobreza, ambientes seguros, prevenção da violência na infância e
+          transformação de normas.
+        </li>
+        <li class="leading-snug">
+          Atualizar programas com revisões de evidência recentes: prevenção é possível quando intervenções são
+          bem desenhadas e mensuradas.
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow">
+      <div class="text-xs uppercase tracking-wide text-gray-500">Políticas públicas</div>
+      <h3 class="font-semibold text-base md:text-lg mb-2">Rede integrada e resposta rápida</h3>
+      <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
+        <li class="leading-snug">
+          Expandir a <app-itext content="Casa da Mulher Brasileira" /> (atendimento integrado)
+          e garantir financiamento e pactuação federativa.
+        </li>
+        <li class="leading-snug">
+          Fortalecer o <app-itext content="Pacto Nacional de Prevenção aos Feminicídios" />
+          (coordenação intersetorial e foco em interseccionalidades).
+        </li>
+        <li class="leading-snug">
+          Ampliar canais 24h como o <app-itext content="Ligue 180" /> (telefone/WhatsApp) e
+          acionar a rede local rapidamente.
+        </li>
+        <li class="leading-snug">
+          Implementar a <app-itext content="monitoração eletrônica" /> para condenados por crimes
+          contra mulheres ao saírem do cárcere (Lei 14.994/2024).
+        </li>
+        <li class="leading-snug">
+          Operar medidas de sinalização e proteção imediata (ex.: <app-itext content="Sinal Vermelho" /> e
+          <app-itext content="violência psicológica" /> tipificada).
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow">
+      <div class="text-xs uppercase tracking-wide text-gray-500">Educação</div>
+      <h3 class="font-semibold text-base md:text-lg mb-2">Mudança de normas e formação contínua</h3>
+      <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
+        <li class="leading-snug">
+          Prevenção primária com educação para <app-itext content="equidade de gênero" />
+          e relacionamentos saudáveis (pilar “T” e “R” do RESPECT).
+        </li>
+        <li class="leading-snug">
+          Formação continuada de segurança pública, justiça, saúde e assistência para
+          <app-itext content="atendimento humanizado" /> e avaliação de risco.
+        </li>
+      </ul>
+    </section>
+
+    <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow">
+      <div class="text-xs uppercase tracking-wide text-gray-500">Dados & Monitoramento</div>
+      <h3 class="font-semibold text-base md:text-lg mb-2">Medir para prevenir</h3>
+      <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
+        <li class="leading-snug">
+          Consolidar indicadores oficiais via <app-itext content="Sinesp VDE" /> (28 métricas,
+          validação rápida) — incluir feminicídio, tentativas e medidas protetivas.
+        </li>
+        <li class="leading-snug">
+          Integrar Justiça: <app-itext content="Banco Nacional de Medidas Protetivas" /> e BNMP 3.0
+          (registro e acompanhamento nacionais).
+        </li>
+        <li class="leading-snug">
+          Manter séries históricas independentes e metodologicamente estáveis com o
+          <app-itext content="Anuário do FBSP" />.
+        </li>
+        <li class="leading-snug">
+          Transparência do MP: <app-itext content="painéis de feminicídio" /> estaduais/nacional para
+          orientar políticas.
+        </li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="rounded-2xl border border-amber-300 bg-amber-50 p-3 md:p-4">
+    <p class="text-[13px] md:text-sm text-amber-900 leading-snug">
+      <app-itext content="Síntese:" /> combinar respostas penais efetivas, serviços integrados e políticas
+      territoriais, com <app-itext content="prevenção baseada em evidências" /> e <app-itext
+        content="dados abertos e regulares" />.
+    </p>
+  </div>
+
+  <p class="text-[11px] text-gray-500">
+    Fontes-chave: OMS/ONU Mulheres — RESPECT (prevenção baseada em evidências); Ministério das Mulheres — Casa da Mulher
+    Brasileira, Pacto Nacional e Ligue 180; MJSP — Sinesp VDE; CNJ — BNMPU/BNMP 3.0; FBSP — Anuário.
+  </p>
 </div>
