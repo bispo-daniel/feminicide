@@ -1,0 +1,27 @@
+.bg-gradient-soft {
+  background: radial-gradient(
+    circle at 80% 90%,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.02) 40%,
+    transparent 80%
+  );
+  background-color: #f7f7f7;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(135deg, #8C0818, #8C0818, #fff);
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
+}

@@ -1,0 +1,8 @@
+<swiper-container direction="horizontal" slides-per-view="1" space-between="0" mousewheel="true" keyboard="true"
+  speed="1000" style="width: 100%; height: 100vh;">
+  <ng-container *ngFor="let component of slides">
+    <swiper-slide>
+      <ng-container *ngComponentOutlet="component"></ng-container>
+    </swiper-slide>
+  </ng-container>
+</swiper-container>
