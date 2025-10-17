@@ -1,29 +1,33 @@
 <div
-  class="w-full h-screen bg-white flex flex-col gap-3 md:gap-5 px-4 py-3 md:px-8 md:py-4 text-black select-none items-center justify-between">
-  <div class="max-w-3xl">
+  class="w-full min-h-screen bg-white flex flex-col gap-4 md:gap-6 px-4 py-5 md:px-8 md:py-8 text-black select-none items-center justify-start fututo-section">
+  
+  <!-- Cabeçalho -->
+  <div class="max-w-3xl text-center">
     <h2 class="font-[Modak] text-2xl sm:text-3xl md:text-4xl text-[#4f4f4f] leading-tight">
       Teste de <span class="text-[#8C0818]">vulnerabilidade/risco</span>
     </h2>
-    <p class="text-[13px] sm:text-sm text-gray-700 leading-snug font-[Roboto] mt-1">
+    <p class="text-[13px] sm:text-sm md:text-base text-gray-700 leading-snug font-[Roboto] mt-2">
       Rastreador breve para refletir sobre <app-itext content="sinais de risco e segurança" />.
       Não substitui atendimento profissional.
     </p>
   </div>
 
+  <!-- Section principal -->
   <section
-    class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-6 shadow w-[450px] flex flex-col items-center">
-    <h3 class="font-semibold text-base md:text-lg mb-2">Por que este teste?</h3>
+    class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-6 shadow w-full max-w-md sm:max-w-lg md:max-w-xl flex flex-col items-center text-center">
+    
+    <h3 class="font-semibold text-base md:text-lg mb-3">Por que este teste?</h3>
 
-    <p class="text-[13px] md:text-sm text-gray-800 leading-relaxed text-center">
+    <p class="text-[13px] md:text-sm text-gray-800 leading-relaxed">
       <span class="font-semibold">Sinais críticos</span> — ameaças, controle, escalada, armas e perseguição
       (base em instrumentos como o <em>Danger Assessment</em>);
-      <span class="font-semibold">orientações seguras</span> — linguagem acolhedora e foco em segurança
+      <span class="font-semibold"> orientações seguras</span> — linguagem acolhedora e foco em segurança
       (protocolo LIVES/OMS);
-      <span class="font-semibold">encaminhamento oficial</span> — informações sobre 180/DEAM e canais públicos quando
+      <span class="font-semibold"> encaminhamento oficial</span> — informações sobre 180/DEAM e canais públicos quando
       necessário.
     </p>
 
-    <div class="mt-4 flex flex-col items-center">
+    <div class="mt-5 flex flex-col items-center gap-2">
       <button routerLink="/quiz"
         class="inline-flex items-center justify-center rounded-2xl px-6 py-3 bg-[#8C0818] text-white font-semibold shadow hover:opacity-95 transition text-sm md:text-base hover:cursor-pointer">
         ✨ Iniciar teste agora
@@ -35,7 +39,7 @@
   </section>
 
 
-  <div class="rounded-2xl border border-amber-300 bg-amber-50 p-3 md:p-4">
+  <div class="rounded-2xl border border-amber-300 bg-amber-50 p-3 md:p-4 w-full max-w-3xl text-center">
     <p class="text-[13px] md:text-sm text-amber-900 leading-snug">
       <span class="font-semibold">Emergência:</span> risco iminente → ligue 190.
       <span class="ml-2 font-semibold">Privacidade:</span> se optar por enviar dados, pediremos <app-itext
@@ -43,4 +47,5 @@
       Para orientação/denúncia 24h, existe o serviço público <span class="font-semibold">Ligue 180</span>.
     </p>
   </div>
+
 </div>

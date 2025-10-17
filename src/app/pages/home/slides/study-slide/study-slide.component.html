@@ -1,97 +1,34 @@
-<div class="w-full h-screen bg-white flex flex-col gap-3 md:gap-5 px-4 py-3 md:px-8 md:py-8 text-black select-none">
-  <div class="max-w-3xl">
+<div class="w-full min-h-screen bg-white flex flex-col gap-6 md:gap-8 px-4 py-5 md:px-8 md:py-8 text-black select-none overflow-y-auto">
+
+  <!-- Cabeçalho -->
+  <div class="max-w-3xl mx-auto">
     <h2 class="font-[Modak] text-2xl sm:text-3xl md:text-4xl text-[#4f4f4f] leading-tight">
       Para estudar e acompanhar <span class="text-[#8C0818]">feminicídio</span>
     </h2>
     <p class="text-[13px] sm:text-sm text-gray-700 leading-snug font-[Roboto] mt-1">
-      Portais e materiais oficiais sobre <app-itext content="leis" />, <app-itext content="dados" /> e <app-itext
-        content="políticas públicas" />.
+      Portais e materiais oficiais sobre <app-itext content="leis" />, <app-itext content="dados" /> e <app-itext content="políticas públicas" />.
     </p>
   </div>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4">
-
-    <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow">
-      <div class="text-xs uppercase tracking-wide text-gray-500">Leis</div>
-      <h3 class="font-semibold text-base md:text-lg mb-2">Marco legal</h3>
-      <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
-        <li class="leading-snug">
-          <app-itext content="Lei 14.994/2024" /> — cria o <app-itext content="art. 121-A" />
-          (feminicídio como crime autônomo) e prevê monitoração eletrônica na LEP.
-        </li>
-        <li class="leading-snug">
-          <app-itext content="Lei 13.104/2015" /> — incluiu o feminicídio como qualificadora do homicídio e
-          no rol dos hediondos (histórico).
-        </li>
-        <li class="leading-snug">
-          <app-itext content="Lei Maria da Penha (11.340/2006)" /> — base para medidas protetivas e
-          tipologias de violência.
-        </li>
-      </ul>
-    </section>
-
-    <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow">
-      <div class="text-xs uppercase tracking-wide text-gray-500">Dados oficiais</div>
-      <h3 class="font-semibold text-base md:text-lg mb-2">Séries e indicadores</h3>
-      <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
-        <li class="leading-snug">
-          <app-itext content="Anuário Brasileiro de Segurança Pública (FBSP)" /> — série histórica e recortes
-          por UF.
-        </li>
-        <li class="leading-snug">
-          <app-itext content="Sinesp VDE / Dados Nacionais" /> — 28 indicadores (inclui feminicídio) com
-          validação rápida.
-        </li>
-        <li class="leading-snug">
-          <app-itext content="Atlas da Violência (Ipea/FBSP)" /> — análises e PDFs por tema (violência contra
-          a mulher, população negra).
-        </li>
-      </ul>
-    </section>
-
-    <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow">
-      <div class="text-xs uppercase tracking-wide text-gray-500">Pesquisas</div>
-      <h3 class="font-semibold text-base md:text-lg mb-2">Vitimização e evidências</h3>
-      <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
-        <li class="leading-snug">
-          <app-itext content="Visível e Invisível (FBSP/Datafolha)" /> — 5ª edição com prevalência por raça,
-          escolaridade e território.
-        </li>
-        <li class="leading-snug">
-          <app-itext content="Painéis e releases" /> de MPs estaduais e órgãos de justiça sobre medidas
-          protetivas e feminicídio.
-        </li>
-      </ul>
-    </section>
-
-    <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow">
-      <div class="text-xs uppercase tracking-wide text-gray-500">Políticas & Serviços</div>
-      <h3 class="font-semibold text-base md:text-lg mb-2">Rede de proteção</h3>
-      <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
-        <li class="leading-snug">
-          <app-itext content="Casa da Mulher Brasileira" /> — atendimento integrado; diretrizes e
-          implantação.
-        </li>
-        <li class="leading-snug">
-          <app-itext content="BNMPU (CNJ)" /> — Banco Nacional de Medidas Protetivas (norma e notas
-          técnicas).
-        </li>
-      </ul>
-    </section>
-  </div>
-
-  <div class="flex flex-col justify-end grow gap-2">
-    <div class="rounded-2xl border border-amber-300 bg-amber-50 p-3 md:p-4">
-      <p class="text-[13px] md:text-sm text-amber-900 leading-snug">
-        Dica: ao comparar números, verifique <app-itext content="período de referência" /> e <app-itext
-          content="metodologia" /> de cada fonte (Anuário, Sinesp, Atlas).
-      </p>
-    </div>
-    <p class="text-[11px] text-gray-500">
-      Leis: Planalto – 14.994/2024; 13.104/2015; LMP 11.340/2006. Dados: FBSP/Anuário; MJSP – Sinesp VDE (28
-      indicadores);
-      Ipea/FBSP – Atlas. Pesquisas: FBSP/Datafolha – Visível e Invisível. Rede: Ministério das Mulheres – CMB; CNJ –
-      BNMPU.
-    </p>
-  </div>
+<div class="flex justify-center w-full mt-20">
+  <section class="bg-white/70 backdrop-blur border border-gray-200 rounded-2xl p-4 md:p-5 shadow w-full">
+    <div class="text-xs uppercase tracking-wide text-gray-500">Leis</div>
+    <h3 class="font-semibold text-base md:text-lg mb-2">Marco legal</h3>
+    <ul class="space-y-1 text-[13px] md:text-sm text-gray-800">
+      <li class="leading-snug">
+        <app-itext content="Lei 14.994/2024"><span class="font-semibold hover:underline">Lei 14.994/2024</span></app-itext> — cria o <app-itext content="art. 121-A"><span class="font-semibold hover:underline">art. 121-A</span></app-itext> (feminicídio como crime autônomo) e prevê monitoração eletrônica na LEP.
+      </li>
+      <li class="leading-snug">
+        <app-itext content="Lei 13.104/2015"><span class="font-semibold hover:underline">Lei 13.104/2015</span></app-itext> — incluiu o feminicídio como qualificadora do homicídio e no rol dos hediondos (histórico).
+      </li>
+      <li class="leading-snug">
+        <app-itext content="Lei Maria da Penha (11.340/2006)"><span class="font-semibold hover:underline">Lei Maria da Penha (11.340/2006)</span></app-itext> — base para medidas protetivas e tipologias de violência.
+      </li>
+    </ul>
+  </section>
 </div>
+
+  
+    <p class="text-[11px] text-gray-500 mt-1 w-full">
+      Leis: Planalto – 14.994/2024; 13.104/2015; LMP 11.340/2006. Dados: FBSP/Anuário; MJSP – Sinesp VDE (28 indicadores); Ipea/FBSP – Atlas. Pesquisas: FBSP/Datafolha – Visível e Invisível. Rede: Ministério das Mulheres – CMB; CNJ – BNMPU.
+    </p>
+  </div>

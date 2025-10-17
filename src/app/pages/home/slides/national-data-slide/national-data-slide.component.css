@@ -1,0 +1,28 @@
+/* Garante que o body permita rolagem */
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+/* Impede cortes e garante rolagem dentro da seção */
+.scroll-section {
+  -webkit-overflow-scrolling: touch; /* rolagem suave em iPhone */
+  scroll-behavior: smooth;
+}
+
+/* Ajustes responsivos extras */
+@media (max-width: 768px) {
+  .scroll-section {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .scroll-section h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+}

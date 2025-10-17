@@ -1,0 +1,60 @@
+/* ===== INTERSECCIONALIDADE SECTION ===== */
+.intersec-section {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(140, 8, 24, 0.5) transparent;
+  -webkit-overflow-scrolling: touch; /* rolagem suave em iOS */
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* ===== Indicador de que há mais conteúdo para rolar ===== */
+.intersec-section::before,
+.intersec-section::after {
+  content: "";
+  position: sticky;
+  left: 0;
+  right: 0;
+  height: 16px;
+  pointer-events: none;
+  z-index: 5;
+}
+.intersec-section::before {
+  top: 0;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.9), transparent);
+}
+.intersec-section::after {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(255,255,255,0.9), transparent);
+}
+
+/* ===== Scrollbar Customizado (somente desktop) ===== */
+.intersec-section::-webkit-scrollbar {
+  width: 8px;
+}
+.intersec-section::-webkit-scrollbar-track {
+  background: transparent;
+}
+.intersec-section::-webkit-scrollbar-thumb {
+  background: rgba(140, 8, 24, 0.3);
+  border-radius: 8px;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .intersec-section {
+    padding: 1rem 1rem 2rem;
+  }
+
+  .intersec-section h2 {
+    font-size: 1.75rem;
+  }
+
+  .intersec-section section {
+    padding: 1rem;
+  }
+
+  .intersec-section p,
+  .intersec-section li {
+    font-size: 0.875rem;
+  }
+}
